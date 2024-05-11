@@ -17,7 +17,7 @@ title: Neha Balamurugan
 description: Hi, welcome to my website :)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nehabalamurugan.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-github_repo: nehabalamurugan.github.io # the GitHub repo name for your project
+github_repo: https://github.com/nehabalamurugan # the GitHub repo name for your project
 github_username: nehabalamurugan
 
 # Optional social link, you can choose from the following options:
