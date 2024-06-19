@@ -20,12 +20,20 @@ layout: default
     }
     .intro-section p {
       margin: 0;
-      font-size: 20px;
+      font-size: 32px;
     }
     .intro-section .enjoy {
       margin: 0;
       padding-top: 15px;
       font-size: 20px;
+    }
+    .intro-section .pronouns {
+      margin: 0;
+      padding-top: 0px;
+      font-size: 15px;
+      display: block;
+        font-size: 15px;
+        color: #888;
     }
 
 /* Timeline CSS */
@@ -118,8 +126,9 @@ layout: default
       <div class="intro-section">
         <img src="/assets/images/profile.jpg" alt="Neha Balamurugan">
         <div class="wrapper">
-            <h1> Hi, I'm Neha👋🏾 </h1> 
-            <p>I'm a computer science researcher interested in VR/AR, ML and entreprenuership. Welcome to my personal website where I share my projects, career, and more!</p>
+            <p> Hi, I'm Neha👋🏾 </p>  
+            <p class="pronouns">[NAY-ha](she/her/hers)</p>
+            <p class= "enjoy">I'm a computer science researcher interested in VR/AR, ML and entreprenuership. Welcome to my personal website where I share my projects, career, and more!</p>
             <p class="enjoy">I like: 🎾 👩🏾‍💻 🧄 🏋🏾‍♀️ 🦦 🌵</p>
         </div>
       </div>
@@ -131,7 +140,7 @@ layout: default
             <div class="timeline-content">
               <time> 2024-2026</time>
               <img src="/assets/images/stanford-logo.webp" alt="Stanford" class="timeline-logo">
-              <p> Pursuing a MSc in Computer Science at Stanford Univeristy with a concentration in AI. </p>
+              <p> Pursuing a MSc in Computer Science at Stanford Univeristy with a concentration in Artificial Intelligence. </p>
             </div>
           </div>
           <div class="timeline-item">
