@@ -36,6 +36,23 @@ layout: default
         color: #888;
     }
 
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .intro-section {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .intro-section img {
+        max-width: 100%;
+      }
+      .intro-section p {
+        font-size: 24px;
+      }
+      .intro-section .enjoy {
+        font-size: 18px;
+      }
+    }
+
 /* Timeline CSS */
 .timeline-wrapper {
   padding: 20px;
