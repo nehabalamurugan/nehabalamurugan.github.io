@@ -103,6 +103,13 @@ layout: default
   margin-left: 10px; /* Space between logo and text */
   vertical-align: middle; /* Align vertically with text */
 }
+.timeline-ridge {
+  width: 50px; /* Set width of logo */
+  height: 50px; /* Set height of logo */
+  margin-right: 10px; /* Space between logo and text */
+  margin-left: 10px; /* Space between logo and text */
+  vertical-align: middle; /* Align vertically with text */
+}
 </style>
 
 <!--Body-->
@@ -124,14 +131,23 @@ layout: default
             <div class="timeline-content">
               <time> 2024-2026</time>
               <img src="/assets/images/stanford-logo.webp" alt="Stanford" class="timeline-logo">
-              <p> Went to Stanford. Worked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun! Went to Stanford. Worked at Meteor Studio. Played club tennis. Did somWent to Stanford. Worked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun!Went to Stanford. Worked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun!Went to Stanford. Worked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun!Went to Stanford. Worked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun!Went to Stanford. Worked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun!e cool things. Had so much fun!Went to Stanford. Worked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun!</p>
+              <p> Pursuing a MSc in Computer Science at Stanford Univeristy with a concentration in AI. </p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-content">
               <time> 2021-2024</time>
               <img src="/assets/images/asu-logo.png" alt="ASU" class="timeline-logo">
-              <p> Went to ASU. WWent to Stanford. Worked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun!Went to Stanford. Worked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun!Went to Stanford. Worked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun!Went to Stanford. Worked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun!Went to Stanford. Worked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun!Went to Stanford. Worked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun!orked at Meteor Studio. Played club tennis. Did some cool things. Had so much fun! </p>
+              <p> Graduated Summa Cum Laude from Arizona State University with BSc in Computer Science as an Outstanding Graduate. Researched Virtual Reality at the <a href="https://meteor.ame.asu.edu/" target="_blank">Meteor Studio</a>, and Augmented Reality at <a href="https://hcistudio.org/" target="_blank">HCIstudio</a>. Won a few hackathons and won even fewer club tennis tournaments. 
+             </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <time> 2017-2021</time>
+              <img src="/assets/images/mtn-logo.jpeg" alt="ASU" class="timeline-logo">
+              <p> Finished as the Valedictorian of Mountain Ridge High School in 2021 where I played better tennis, took too many APs, and founded <a href="https://www.yourvalley.net/stories/mountain-ridge-students-help-break-digital-divide,181284" target="_blank">Break Digital Divide</a>. 
+             </p>
             </div>
           </div>
           <!-- Add more timeline items as needed -->
