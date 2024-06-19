@@ -31,3 +31,6 @@ linkedin_username: nehabalamurugan
 theme: minima
 plugins:
   - jekyll-feed
+
+include: 
+- assets/main.css
