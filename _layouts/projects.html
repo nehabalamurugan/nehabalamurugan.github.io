@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<article>
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.date | date_to_string }}</p>
+  </header>
+  <section>
+    <p>{{ page.description }}</p>
+    {{ content }}
+  </section>
+</article>

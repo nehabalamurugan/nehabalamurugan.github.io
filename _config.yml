@@ -34,3 +34,9 @@ plugins:
 
 include: 
 - assets/main.css
+
+collections:
+  hackathons:
+    output: true
+  projects:
+    output: true

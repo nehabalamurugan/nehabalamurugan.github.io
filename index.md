@@ -164,7 +164,7 @@ layout: default
             <div class="timeline-content">
               <time> 2021-2024</time>
               <img src="/assets/images/asu-logo.png" alt="ASU" class="timeline-logo">
-              <p> Graduated Summa Cum Laude from Arizona State University with BSc in Computer Science as an Outstanding Graduate. Researched Virtual Reality at the <a href="https://meteor.ame.asu.edu/" target="_blank">Meteor Studio</a>, and Augmented Reality at <a href="https://hcistudio.org/" target="_blank">HCIstudio</a>. Won a few hackathons and won even fewer club tennis tournaments. 
+              <p> Graduated Summa Cum Laude from Arizona State University with BSc in Computer Science as an Outstanding Graduate. Researched Virtual Reality at the <a href="https://meteor.ame.asu.edu/" target="_blank">Meteor Studio</a>, and Augmented Reality at <a href="https://hcistudio.org/" target="_blank">HCIstudio</a>. Won a few hackathons and won fewer club tennis tournaments. 
              </p>
             </div>
           </div>

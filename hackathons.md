@@ -1,10 +1,47 @@
 ---
 layout: default
-title: Hackathons
+title: Projects
 permalink: /hack/
 ---
 <main class="page-content" aria-label="Content">
+
+<div class="work-section">
+  <h2>Hackathons</h2>
+  <div class="cards">
+    {% for hackathon in site.hackathons %}
+    <div class="card">
+      <h3><a href="{{ hackathon.url }}">{{ hackathon.title }}</a></h3>
+      <p><strong>Date:</strong> {{ hackathon.date | date_to_string }}</p>
+      <p><strong>Project:</strong> {{ hackathon.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<hr>
+
+<div class="work-section">
+  <h2>Projects</h2>
+  <div class="cards">
+    {% for project in site.projects %}
+    <div class="card">
+      <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+      <p><strong>Date:</strong> {{ project.date | date_to_string }}</p>
+      <p><strong>Description:</strong> {{ project.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
 </main>
+
+
+
+
+
+
+
+
   <!--Footer-->
   <footer class="site-footer h-card">
     <data class="u-url" href="/"></data>
