@@ -2,6 +2,7 @@
 layout: default
 title: Career
 permalink: /career/
+header_hide: true
 ---
 <main class="page-content" aria-label="Content">
 Experience

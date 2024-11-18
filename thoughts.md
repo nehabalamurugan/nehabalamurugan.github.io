@@ -2,7 +2,9 @@
 layout: default
 title: Thoughts
 permalink: /thoughts/
+header_hide: true
 ---
+
 <main class="page-content" aria-label="Content">
 </main>
   <!--Footer-->
@@ -20,7 +22,7 @@ permalink: /thoughts/
         <div class="footer-col footer-col-2">
           <ul class="social-media-list">
             <li><a href="https://github.com/nehabalamurugan"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">nehabalamurugan</span></a></li>
-            <li><a href="https://www.linkedin.com/in/neha-balamurugan"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">nehabalamurugan</span></a></li>
+            <li><a href="https://www.linkedin.com/in/neha-balamurugan-8455981b1/"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">nehabalamurugan</span></a></li>
           </ul>
         </div>
         <div class="footer-col footer-col-3">
