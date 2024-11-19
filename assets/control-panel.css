@@ -1,9 +1,9 @@
 .control-panel {
     position: fixed;
-    right: -250px;
+    right: -100px;
     top: 50%;
     transform: translateY(-50%);
-    width: 250px;
+    width: 100px;
     background: var(--header-bg);
     border-radius: 20px 0 0 20px;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
@@ -31,7 +31,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
 }
 
