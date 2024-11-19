@@ -195,7 +195,7 @@ layout: default
         <div class="wrapper">
             <p> Hi, I'm Neha👋🏾 </p>  
             <p class="pronouns">[NAY-ha](she/her/hers)</p>
-            <p class= "enjoy">I'm a computer science researcher interested in VR/AR, ML and entreprenuership. Welcome to my personal website where I share my projects, career, and more!</p>
+            <p class= "enjoy">I'm a computer science student interested in VR/AR, ML and entreprenuership. Welcome to my personal website where I share my projects, career, and more!</p>
             <p class="enjoy">I like: 🎾 👩🏾‍💻 🧄 🏋🏾‍♀️ 🦦 🌵</p>
         </div>
       </div>
