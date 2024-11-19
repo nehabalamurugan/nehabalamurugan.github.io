@@ -14,26 +14,40 @@ layout: default
       margin-top: 20px;
       align-items: center;
       gap: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
     }
     .intro-section img {
       max-width: 350px;
+      opacity: 0;
+      transform: scale(0.95);
+      animation: fadeInScale 0.008s ease 0.002s forwards;
     }
     .intro-section p {
       margin: 0;
       font-size: 32px;
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: fadeInSlide 0.8s ease 0.4s forwards;
     }
     .intro-section .enjoy {
       margin: 0;
       padding-top: 15px;
       font-size: 20px;
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: fadeInSlide 0.8s ease 0.6s forwards;
     }
     .intro-section .pronouns {
       margin: 0;
       padding-top: 0px;
       font-size: 15px;
       display: block;
-        font-size: 15px;
-        color: #888;
+      color: #888;
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: fadeInSlide 0.8s ease 0.8s forwards;
     }
 
     /* Responsive adjustments */
@@ -53,87 +67,123 @@ layout: default
       }
     }
 
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInScale {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeInSlide {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
 /* Timeline CSS */
 .timeline-wrapper {
-  padding: 20px;
-  margin-top: 20px;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .timeline {
   position: relative;
-  max-width: 800px; /* Set a max width for the timeline */
-  margin: 0 auto;
+  padding: 20px 0;
 }
 
-.timeline::after {
+.timeline::before {
   content: '';
   position: absolute;
-  width: 2px; /* Thinner line */
-  background-color: #e8e8e8;
+  width: 3px;
+  background: linear-gradient(180deg, #e8e8e8 0%, #d1d1d1 100%);
   top: 0;
   bottom: 0;
-  left: 20px; /* Position line closer to the left */
-  margin-left: -2px;
+  left: 50px;
 }
 
 .timeline-item {
-  padding: 5px 20px;
+  margin: 40px 0;
   position: relative;
-  background-color: inherit;
-  width: 100%; /* Full width */
-  margin-left: 10px; /* Indent content from the line */
+  padding-left: 70px;
 }
 
-.timeline-item::after {
+.timeline-item::before {
   content: '';
   position: absolute;
-  width: 10px; /* Smaller circle */
-  height: 10px; /* Smaller circle */
-  background-color:  #e8e8e8;
-  border: 4px solid #e8e8e8;
-  top: 15px;
-  left: -1px; /* Position circle closer to the line */
+  width: 12px;
+  height: 12px;
+  background: white;
+  border: 3px solid #e8e8e8;
   border-radius: 50%;
-  z-index: 1;
+  left: 44px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover::before {
+  background: #e8e8e8;
 }
 
 .timeline-content {
-  display: flex; /* Add this line */
-  align-items: left; /* Add this line */
-  padding: 5px 30px;
-  background-color: rgb(255, 255, 255);
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 20px;
   position: relative;
-  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.timeline-content h2 {
-  margin-top: 0;
-  font-size: 20px;
+.timeline-content:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transform: translateX(5px);
 }
 
-.timeline-content p {
-  margin: 0;
-  font-size: 16px;
-}
-
-.timeline-content time {
-  display: block;
-  font-size: 15px;
-  color: #888;
-}
 .timeline-logo {
-  width: 70px; /* Set width of logo */
-  height: 50px; /* Set height of logo */
-  margin-right: 10px; /* Space between logo and text */
-  margin-left: 10px; /* Space between logo and text */
-  vertical-align: middle; /* Align vertically with text */
+  width: 60px;
+  height: 40px;
+  object-fit: contain;
 }
-.timeline-ridge {
-  width: 50px; /* Set width of logo */
-  height: 50px; /* Set height of logo */
-  margin-right: 10px; /* Space between logo and text */
-  margin-left: 10px; /* Space between logo and text */
-  vertical-align: middle; /* Align vertically with text */
+
+.timeline-text {
+  flex: 1;
+}
+
+.timeline-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.timeline-description {
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .timeline::before {
+    left: 30px;
+  }
+  
+  .timeline-item {
+    padding-left: 50px;
+  }
+  
+  .timeline-item::before {
+    left: 24px;
+  }
 }
 </style>
 
@@ -153,30 +203,41 @@ layout: default
     <div class="wrapper">
       <div class="timeline-wrapper">
         <div class="timeline">
-        <div class="timeline-item">
+          <article class="timeline-item">
             <div class="timeline-content">
-              <time> 2024-2026</time>
               <img src="/assets/images/stanford-logo.webp" alt="Stanford" class="timeline-logo">
-              <p> Pursuing a MSc in Computer Science at Stanford Univeristy with a concentration in Artificial Intelligence. </p>
+              <div class="timeline-text">
+                <div class="timeline-date">2024-2026</div>
+                <p class="timeline-description">
+                  Pursuing a MSc in Computer Science at Stanford University with a concentration in Artificial Intelligence.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="timeline-item">
+          </article>
+
+          <article class="timeline-item">
             <div class="timeline-content">
-              <time> 2021-2024</time>
               <img src="/assets/images/asu-logo.png" alt="ASU" class="timeline-logo">
-              <p> Graduated Summa Cum Laude from Arizona State University with BSc in Computer Science as an Outstanding Graduate. Researched Virtual Reality at the <a href="https://meteor.ame.asu.edu/" target="_blank">Meteor Studio</a>, and Augmented Reality at <a href="https://hcistudio.org/" target="_blank">HCIstudio</a>. Won a few hackathons and won even fewer club tennis tournaments. 
-             </p>
+              <div class="timeline-text">
+                <div class="timeline-date">2021-2024</div>
+                <p class="timeline-description">
+                  Graduated Summa Cum Laude from Arizona State University with BSc in Computer Science as an Outstanding Graduate. Researched Virtual Reality at the <a href="https://meteor.ame.asu.edu/">Meteor Studio</a>, and Augmented Reality at <a href="https://hcistudio.org/">HCIstudio</a>. Won a few hackathons and won even fewer club tennis tournaments.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="timeline-item">
+          </article>
+
+          <article class="timeline-item">
             <div class="timeline-content">
-              <time> 2017-2021</time>
-              <img src="/assets/images/mtn-logo.jpeg" alt="ASU" class="timeline-logo">
-              <p> Finished as the Valedictorian of Mountain Ridge High School in 2021 where I played better tennis, took too many APs, and founded <a href="https://www.yourvalley.net/stories/mountain-ridge-students-help-break-digital-divide,181284" target="_blank">Break Digital Divide</a>. 
-             </p>
+              <img src="/assets/images/mtn-logo.jpeg" alt="Mountain Ridge" class="timeline-logo">
+              <div class="timeline-text">
+                <div class="timeline-date">2017-2021</div>
+                <p class="timeline-description">
+                  Finished as the Valedictorian of Mountain Ridge High School in 2021 where I played better tennis, took too many APs, and founded <a href="https://www.yourvalley.net/stories/mountain-ridge-students-help-break-digital-divide,181284">Break Digital Divide</a>.
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- Add more timeline items as needed -->
+          </article>
         </div>
       </div>
     </div>
@@ -198,7 +259,7 @@ layout: default
         <div class="footer-col footer-col-2">
           <ul class="social-media-list">
             <li><a href="https://github.com/nehabalamurugan"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">nehabalamurugan</span></a></li>
-            <li><a href="https://www.linkedin.com/in/neha-balamurugan"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">nehabalamurugan</span></a></li>
+            <li><a href="https://www.linkedin.com/in/neha-balamurugan-8455981b1/"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">nehabalamurugan</span></a></li>
           </ul>
         </div>
         <div class="footer-col footer-col-3">
