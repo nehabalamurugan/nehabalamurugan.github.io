@@ -13,10 +13,26 @@ const socials = [
 export function Sidebar() {
 
   return (
-    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-24">
       <div>
         <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">Neha Balamurugan</h1>
-        <h2 className="mt-3 text-lg font-medium tracking-tight text-primary sm:text-xl">AI Researcher</h2>
+        
+        {/* Social Media Icons */}
+        <ul className="ml-1 mt-4 flex items-center gap-6" aria-label="Social media">
+          {socials.map((social) => (
+            <li key={social.name}>
+              <a
+                className="block text-primary hover:text-primary/80 transition-colors"
+                href={social.href}
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label={`${social.name} (opens in a new tab)`}
+              >
+                <social.icon className="h-6 w-6" />
+              </a>
+            </li>
+          ))}
+        </ul>
         
         {/* Profile Image */}
         <div className="mt-6">
@@ -69,23 +85,6 @@ export function Sidebar() {
             </ul>
           </div>
         </div>
-
-        {/* Social Media Icons */}
-        <ul className="ml-1 mt-8 flex items-center gap-6" aria-label="Social media">
-          {socials.map((social) => (
-            <li key={social.name}>
-              <a
-                className="block text-primary hover:text-primary/80 transition-colors"
-                href={social.href}
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label={`${social.name} (opens in a new tab)`}
-              >
-                <social.icon className="h-6 w-6" />
-              </a>
-            </li>
-          ))}
-        </ul>
       </div>
     </header>
   )

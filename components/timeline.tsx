@@ -47,7 +47,7 @@ const timelineItems: TimelineItem[] = [
     title: "Bachelor's in Computer Science",
     organization: "Arizona State University",
     type: "education",
-    award: "Rank #1",
+    award: "CS Rank #1",
     experiences: [
       {
         period: "2022-2024",
